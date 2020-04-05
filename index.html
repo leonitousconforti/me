@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=8190b9485c798dadc1460b18eff9ab33">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css?h=18313f04cea0e078412a028c5361bd4e">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css?h=18313f04cea0e078412a028c5361bd4e">
     <link rel="stylesheet" href="assets/css/Important-Highlighted-Event.css?h=a3443c91d6920b74538c14d37a3e7c0f">
 </head>
 
@@ -27,15 +27,15 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contact.html">Contact</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <header class="masthead bg-primary text-white text-center" style="background-image: url(&quot;assets/img/me.png?h=8e008789e5f4d9edc171a67ab3237ddd&quot;);background-position: 50% 45%;background-repeat: no-repeat;background-size: cover;width: 100vw;height: 100vh;">
-        <div class="container" style="padding-top: 10%;">
+        <div class="container" style="padding-top: 10rem;">
             <h1>Leo Conforti</h1>
-            <h2 class="text-monospace text-center shadow-lg font-weight-light mb-0">Learning computer programing through research &amp; development</h2>
+            <h2 class="text-monospace text-center shadow-lg font-weight-light mb-0">Learning computer science through research &amp; development</h2>
         </div>
     </header>
     <section id="portfolio" class="portfolio">
@@ -66,7 +66,7 @@
     </section>
     <section id="about" class="bg-primary text-white mb-0">
         <div class="container">
-            <h2 class="text-uppercase text-center text-white">About</h2>
+            <h2 class="text-uppercase text-center text-white">About me</h2>
             <hr class="star-light mb-5">
             <div class="row">
                 <div class="col-lg-4 col-xl-11 m-auto">
@@ -75,6 +75,32 @@
                 </div>
             </div>
             <div class="text-center mt-4"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Name"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div id="success"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit" style="padding-left: auto;">Send</button></div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer text-center">
@@ -93,7 +119,7 @@
         </div>
     </footer>
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright ©&nbsp;Brand 2020</small></div>
+        <div class="container"><small>Copyright ©&nbsp;LeoConforti 2020</small></div>
     </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
@@ -112,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/leonitousconforti/basilisk" target="_blank">See on Github!</a></div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/leonitousconforti/basilisk" target="_blank">View on Github!</a></div>
             </div>
         </div>
     </div>
@@ -131,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/leonitousconforti/tini-tower" target="_blank">&nbsp;See on Github!</a></div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/leonitousconforti/tini-tower" target="_blank">&nbsp;View on Github!</a></div>
             </div>
         </div>
     </div>
@@ -150,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/leonitousconforti/wacky-TicTacToe" target="_blank">&nbsp;See on Github!</a></div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/leonitousconforti/wacky-TicTacToe" target="_blank">&nbsp;View on Github!</a></div>
             </div>
         </div>
     </div>
@@ -214,8 +240,8 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js?h=83e266cb1712b47c265f77a8f9e18451"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js?h=e46528792882c54882f660b60936a0fc"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/freelancer.js?h=c39cf000ef6adba0f85349e55288c80d"></script>
 </body>
