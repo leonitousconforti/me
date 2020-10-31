@@ -20,7 +20,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   line-height: 60px;
   position: absolute;
   left: 50%;
-  bottom: 0.20vh;
+  bottom: 200px;
   color: #fff;
   text-align: center;
   font-size: 70px;
