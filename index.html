@@ -60,32 +60,38 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-6">
-                <h3 class="text-white">Project presentation</h3>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTrTBomRUavjtsvtgiqzAcfhg4pTkLEt4MOB5HGURP_UM3Pze-12yee4TOfRMIVwiE1p1UJrp9PmUJ7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="360" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-            </div>
-            <div class="col-md-6">
-                <h3 class="text-white">Recording of our presentation</h3>
-                <iframe src="https://drive.google.com/file/d/17M7BZzdC68qX08xwgrNOHBudCBaZzbnx/preview" width="640" height="360"></iframe>
+        <div class="container">
+            <div class="row" style="padding-top: 40px;">
+                <div class="col-md-6 text-center">
+                    <!-- https://docs.google.com/presentation/d/e/2PACX-1vTrTBomRUavjtsvtgiqzAcfhg4pTkLEt4MOB5HGURP_UM3Pze-12yee4TOfRMIVwiE1p1UJrp9PmUJ7/embed?start=false&loop=false&delayms=3000 -->
+                    <h4 class="text-white">Project presentation</h4>
+                    <iframe id="Presentation-iframe" src="about:blank" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+                <div class="col-md-6 text-center">
+                    <!-- https://drive.google.com/file/d/17M7BZzdC68qX08xwgrNOHBudCBaZzbnx/preview -->
+                    <h4 class="text-white">Recording of our presentation</h4>
+                    <iframe id="Presentation-video-iframe" src="about:blank" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <h3 class="text-white">Demo pt. 1</h3>
-                <iframe src="about:blank"></iframe>
-            </div>
-            <div class="col-md-4">
-                <h3 class="text-white">Demo pt. 2</h3>
-                <iframe src="about:blank"></iframe>
-            </div>
-            <div class="col-md-4">
-                <h3 class="text-white">Flicking pt. 1</h3>
-                <iframe src="about:blank"></iframe>
-            </div>
-            <div class="col-md-4">
-                <h3 class="text-white">Flicking pt. 2</h3>
-                <iframe src="about:blank"></iframe>
+        <div class="container">
+            <div class="row" style="padding-top: 80px;">
+                <div class="col-sm-3 text-center">
+                    <h4 class="text-white">Demo pt. 1</h4>
+                    <iframe id="Demo-pt.-1-iframe" src="about:blank" width="75%" height="75%" frameborder="0"></iframe>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h4 class="text-white">Demo pt. 2</h4>
+                    <iframe id="Demo-pt.-2-iframe" src="about:blank" width="75%" height="75%" frameborder="0"></iframe>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h4 class="text-white">Flicking pt. 1</h4>
+                    <iframe id="Flicking-pt.-1-iframe" src="about:blank" width="75%" height="75%" frameborder="0"></iframe>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h4 class="text-white">Flicking pt. 2</h4>
+                    <iframe id="Flicking-pt.-2-iframe" src="about:blank" width="75%" height="75%" frameborder="0"></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -346,6 +352,28 @@
     <script src="/assets/js/smart-forms.min.js?h=18313f04cea0e078412a028c5361bd4e"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="/assets/js/freelancer.js?h=c39cf000ef6adba0f85349e55288c80d"></script>
+
+    <script>
+        $(document).ready(function() {
+            const iframe1 = document.getElementById("Presentation-iframe");
+            iframe1.src = "https://docs.google.com/presentation/d/e/2PACX-1vTrTBomRUavjtsvtgiqzAcfhg4pTkLEt4MOB5HGURP_UM3Pze-12yee4TOfRMIVwiE1p1UJrp9PmUJ7/embed?start=false&loop=false&delayms=3000";
+
+            const iframe2 = document.getElementById("Presentation-video-iframe");
+            iframe2.src = "https://drive.google.com/file/d/17M7BZzdC68qX08xwgrNOHBudCBaZzbnx/preview";
+
+            const iframe3 = document.getElementById("Demo-pt.-1-iframe");
+            iframe3.src = "https://drive.google.com/file/d/1gzTRZpB227OcXVL7RsLMjbjs4YFQLzKR/preview";
+
+            const iframe4 = document.getElementById("Demo-pt.-2-iframe");
+            iframe4.src = "https://drive.google.com/file/d/1QQMtVoGzng8-eRpQFoDmMogEWfoj7jja/preview";
+
+            const iframe5 = document.getElementById("Flicking-pt.-1-iframe");
+            iframe5.src = "https://drive.google.com/file/d/1bTy3MCl0fUckzcklsCV9rVPpOcx198yQ/preview";
+
+            const iframe6 = document.getElementById("Flicking-pt.-2-iframe");
+            iframe6.src = "https://drive.google.com/file/d/1F6eIDN37NQTmRmyB4KkGiy3S0TVm33PG/preview";
+        });
+    </script>
 </body>
 
 </html>
